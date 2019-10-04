@@ -12,3 +12,18 @@ I need this code, just don't know where, perhaps should make some middleware, do
 
 Go code!
 */
+
+const server = require('./server');
+const chalk = require('chalk');
+
+const port = process.env.PORT || 8000;
+
+server.listen(port, () => {
+    console.log(`
+    ${chalk.green('*************************************')} 
+        Server listening on port: ${chalk.blue(port)} 
+    ${chalk.green('*************************************')}
+    `)
+
+    console.log(`     ♫♪.ılılıll|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅|llılılı.♫♪\n`)
+})
